@@ -1,7 +1,3 @@
-#this project defines 3 functions to asses the performance of gradient descent and np.linalg.solve for the
-#semi-supervised learning problem. given in HW1. See descriptions below
-# in this exercise version, there are some incomplete codes in utilities and model
-
 # First, we import the necessary classes or functions from the model module.
 from model import *
 from utilities import *
@@ -84,8 +80,3 @@ def plot_solution(num_samples, num_labelled, gamma):
     # Plot the clusters formed by the solution
     model.plot_clusters(np.sign(y_pred))
 
-
-# This is the main function of the script
-if __name__ == "__main__":
-    # The function plot_solution is called with parameters num_samples=400, num_labelled=40, and gamma=0.5
-    gradient_descent_convergence(num_samples=2000, num_labelled=200, gamma=0.5)
